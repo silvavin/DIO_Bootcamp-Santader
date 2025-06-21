@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input e seus Tipos </title>
+</head>
+<body>
+    <form >
+        <label> Text: </label><input type="text"/><br>
+        <!-- Na linha de baixo o min é para estabelecer um numero minimo ,max para estabelecer um numero max dentro da tag input e  step é para pular de 5 em 5 .-->
+         
+        <label>Number: </label><input type="number" min="0" max="99" step="5"/><br>
+
+        <label> E-mail </label> <input type="email"/><br>
+    </form>
+
+<hr>
+<h3> pequeno formulario</h3>
+    <form>
+        <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit" value="Submit"> <br>
+
+    </form>
+
+
+<hr>
+<h3> Radio </h3>
+    <p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+<hr>
+<h3>checkbox</h3>
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+<hr>
+<h3>Comentario / area de texto </h3>
+
+ <!--O rows atributo especifica o número visível de linhas em uma área de texto.
+
+O cols atributo especifica a largura visível de uma área de texto. -->
+
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea> <br> <input type="submit" value="Submit"> <br>
+
+    
+<!-- Aqui eu deixei o mesmo tamanho do de cima -->
+<textarea name="message" style="width:239px; height:160px;">
+The cat was playing in the garden.
+</textarea>
+
+
+
+<hr>
+
+<h3>Elemento  Select </h3>
+    <label for="cars">Choose a car </label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo </option>
+
+            <!--Para definir uma opção pré-selecionada, adicione o selectedatributo à opção: -->
+
+            <option value="fiat" selected >Fiat</option>
+            <option value="saab">Saab</option>
+            <option value="audi">Audi</option>
+        </select>
+<h3>O elemento button </h3>
+<button type="button"  onclick="alert('Hello World!')">Click Me!
+
+</button> <br> <br>
+<h3> Inuput type = file </h3>
+<label for="document">Envie o Seu documento</label> <br>
+    <input type="file"  multiple ="document" name="document">
+    <!-- o multiple deixa você selecionar varios arquivos -->
+
+    
+</body>
+</html>

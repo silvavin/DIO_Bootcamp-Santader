@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro </title>
+</head>
+<body>
+<!--   Abaixo estar um formulario basico 
+        Nele tem a tag form que possui o nome de "signup " o metodo para armazenamento ou verificação é o post (recomendado, já que ele faz uma requisição para o servidor )                                            
+
+
+
+
+
+-->
+        <h2>method post</h2>
+    <form name="signup" method="post" action="https://meusite.com.br/signup"> 
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br>
+        <button type="submit">Enviar</button>
+
+
+<hr>
+        
+    </form>
+
+    <!--  aqui temos o autocomplete  que é uma forma do navegador armazenado o seu login e autocompletar . -->
+<h2>autocomplete</h2>
+     <form name="signup"  autocomplete="on" action="https://meusite.com.br/signup"> 
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br>
+        <button type="submit">Enviar</button>
+
+
+
+        
+    </form>
+<hr>
+
+<!--   Aqui temos o  onsubmit que vai ser utilizado pelo javascript , aqui ele é um alerta que vai aparecer no navegador apos o envio-->
+   <h2>onsubmit</h2>
+
+ <form name="signup" onsubmit="alert('Enviei o formulario')" action="https://meusite.com.br/signup"> 
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br>
+        <button type="submit">Enviar</button>
+
+
+
+        
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
