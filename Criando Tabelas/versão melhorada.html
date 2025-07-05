@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tabela de Nomes e Sobrenomes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    table {
+      width: 100%;
+      max-width: 600px;
+      border-collapse: collapse;
+      border: 2px solid #333;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 12px 0;
+      padding: 10px;
+    }
+
+    thead {
+      background-color: #333;
+      color: #fff;
+    }
+
+    thead th {
+      padding: 12px;
+    }
+
+    tbody td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tfoot {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+
+    tfoot td {
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <table aria-label="Tabela com nomes e sobrenomes" summary="Tabela que exibe uma lista de nomes e sobrenomes de pessoas." role="table">
+    <caption>Lista de Pessoas</caption>
+    
+    <thead>
+      <tr>
+        <th scope="col" title="Nome próprio da pessoa">Nome</th>
+        <th scope="col" title="Sobrenome da pessoa">Sobrenome</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>Vinicius</td>
+        <td>Lima</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>Silva</td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>Lima</td>
+      </tr>
+      <tr>
+        <td>Enedina</td>
+        <td>Lima</td>
+      </tr>
+    </tbody>
+    
+    <tfoot>
+      <tr>
+        <td colspan="2">Total: 4 pessoas</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
